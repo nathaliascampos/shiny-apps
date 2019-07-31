@@ -1,0 +1,50 @@
+
+/* -- header -- */
+
+.skin-blue .main-header .logo {
+    color: #000; /* para theme 3 */
+    position: fixed; /* fixar parte do header */
+}
+
+/* -- sidebar -- */
+
+.skin-blue .main-sidebar .sidebar .sidebar-menu a {
+    /* menuItem com margem*/
+    margin-bottom: 5px; 
+}
+
+.left-side, .main-sidebar { 
+    /* deixar a box do sidebar fixa */
+    position: fixed; 
+}
+
+            /* main sidebar 
+            .main-sidebar {
+                background-image: url(sidebar.jpeg) !important;
+                opacity: 0.2;
+            }
+            */
+
+.bg-navy {
+    background-color: #1b3577 !important;
+}
+
+
+/* -- minhas classes -- */
+
+.logo_4i{
+    padding-left: 5px;
+    padding-bottom: 5px; 
+    bottom: 0;
+    position: absolute;
+}
+
+.ponto{
+    opacity: 0;
+}
+
+
+
+
+
+
