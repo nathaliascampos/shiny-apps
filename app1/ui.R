@@ -5,7 +5,7 @@
 # Created: 2019-07-31
 ################################################################################
 
-header <- dashboardHeader(title = "Forecasting")
+header <- dashboardHeader(title = "Shiny R")
 
 sidebar <- dashboardSidebar(
     # incluindo arquivo css
@@ -13,12 +13,12 @@ sidebar <- dashboardSidebar(
     
     sidebarMenu(
         id = "siderbarmenu", 
+        menuItem("Charts", tabName = "charts",  icon = icon("home")),
         menuItem("Cards",  tabName = "cards",  icon = icon("home")),
-        menuItem("Plots",  tabName = "plots",  icon = icon("home")),
         menuItem("Tables", tabName = "tables", icon = icon("home"))
     )
 )
 
-body <- dashboardBody(tabItems(cards, tables))
+body <- dashboardBody(tabItems(cards, charts, tables))
 
-ui <- dashboardPage(title = "Forecasting", header, sidebar, body)
+ui <- dashboardPage(title = "Shiny R", header, sidebar, body)

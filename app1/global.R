@@ -9,14 +9,16 @@
 library(shiny)
 library(shinydashboard)
 library(shinydashboardPlus)
-library(dashboardthemes)
-library(highcharter)
-library(rhandsontable)
 library(DT)
 library(formattable)
-library(forecast)
+library(rhandsontable)
+library(highcharter)
 library(shinycssloaders)
+library(forecast)
+library(shinyBS)
+
 
 # load modules
 source("modules/mod_cards.R")
+source("modules/mod_charts.R")
 source("modules/mod_tables.R")
