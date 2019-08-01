@@ -13,9 +13,9 @@ sidebar <- dashboardSidebar(
     
     sidebarMenu(
         id = "siderbarmenu", 
-        menuItem("Charts", tabName = "charts",  icon = icon("home")),
-        menuItem("Cards",  tabName = "cards",  icon = icon("home")),
-        menuItem("Tables", tabName = "tables", icon = icon("home"))
+        menuItem("Charts", tabName = "charts", icon = icon("chart-bar")),
+        menuItem("Cards",  tabName = "cards",  icon = icon("box")),
+        menuItem("Tables", tabName = "tables", icon = icon("table"))
     )
 )
 

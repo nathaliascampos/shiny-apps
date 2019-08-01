@@ -18,33 +18,21 @@
     position: fixed; 
 }
 
-            /* main sidebar 
-            .main-sidebar {
-                background-image: url(sidebar.jpeg) !important;
-                opacity: 0.2;
-            }
-            */
 
 .bg-navy {
     background-color: #1b3577 !important;
 }
 
 
-/* -- minhas classes -- */
+/* -- Box -- */
 
-.logo_4i{
-    padding-left: 5px;
-    padding-bottom: 5px; 
-    bottom: 0;
-    position: absolute;
+.box-header .box-title, .panel-title{
+    font-weight: bold; 
 }
 
-.ponto{
-    opacity: 0;
+#title{
+    font-size: 14pt; 
+    font-weight: bold; 
+    color: #2C65A1
 }
-
-
-
-
-
 

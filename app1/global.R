@@ -9,6 +9,7 @@
 library(shiny)
 library(shinydashboard)
 library(shinydashboardPlus)
+library(shinyWidgets)
 library(DT)
 library(formattable)
 library(rhandsontable)

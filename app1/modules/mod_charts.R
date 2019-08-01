@@ -2,7 +2,6 @@
 ########################################################################################.
 # Pacotes usados:
 # - shinydashboard     (box)
-# - shinydashboardPlus (boxPlus)
 # - highchart          (highchartOutput)
 # - shinycssloaders    (withSpinner) 
 ########################################################################################.
@@ -10,25 +9,21 @@
 charts <- tabItem(
     tabName = "charts",
     
-    fluidRow(
+    panel(
+        div(HTML(paste(icon("chart-bar"), "Charts")), id = "title"),
         
-        boxPlus(
-            title = "Highcharter", width = 12,
-            closable = FALSE, collapsible = TRUE,
+        fluidRow(
+            box(title = "Highcharter", width = 12, status = "primary", solidHeader = TRUE,
+                highchartOutput("arima") %>% withSpinner(type = getOption("spinner.type", default = 1))
+            ),
             
-            enable_sidebar = TRUE, sidebar_width = 20,
-            sidebar_content = "Informações...",
-            
-            highchartOutput("arima") %>% withSpinner(type = getOption("spinner.type", default = 1))
-        ),
-        
-        box(title = "Highcharter", width = 8,
-            highchartOutput("high2", height = "250px") %>% withSpinner(type = getOption("spinner.type", default = 1))
-        ),
-        box(title = "Highcharter", width = 4,
-            highchartOutput("high3", height = "250px") %>% withSpinner(type = getOption("spinner.type", default = 1))
+            box(title = "Highcharter", width = 8, status = "primary", solidHeader = TRUE,
+                highchartOutput("high2", height = "250px") %>% withSpinner(type = getOption("spinner.type", default = 1))
+            ),
+            box(title = "Highcharter", width = 4, status = "primary", solidHeader = TRUE,
+                highchartOutput("high3", height = "250px") %>% withSpinner(type = getOption("spinner.type", default = 1))
+            )
         )
-        
-    ) 
+    )
 )
 
