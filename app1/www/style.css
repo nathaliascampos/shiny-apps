@@ -2,7 +2,6 @@
 /* -- header -- */
 
 .skin-blue .main-header .logo {
-    color: #000; /* para theme 3 */
     position: fixed; /* fixar parte do header */
 }
 
@@ -18,12 +17,6 @@
     position: fixed; 
 }
 
-
-.bg-navy {
-    background-color: #1b3577 !important;
-}
-
-
 /* -- Box -- */
 
 .box-header .box-title, .panel-title{
@@ -34,5 +27,10 @@
     font-size: 14pt; 
     font-weight: bold; 
     color: #2C65A1
+}
+
+#sub-title{
+    font-weight: bold; 
+    text-align: center;
 }
 
